@@ -95,6 +95,11 @@ navigationController:(UINavigationController*)navigationController
     [self centerTitleView:navigationBarBounds titleLabel:self.titleView.titleLabel subtitleLabel:self.titleView.subtitleLabel];
     
     self.viewController.navigationItem.titleView = self.titleView;
+
+    // Hide 1px bottom line
+    [[UINavigationBar appearance] setBackgroundImage: [UIImage new]
+                                     forBarMetrics: UIBarMetricsDefault];
+    [UINavigationBar appearance].shadowImage = [UIImage new];
 }
 
 
