@@ -122,9 +122,6 @@ navigationController:(UINavigationController*)navigationController
     imageView.contentMode = UIViewContentModeScaleAspectFit;
     imageView.autoresizingMask = self.titleView.autoresizingMask;
     
-    // Reset title image size
-    imageView.frame = CGRectMake(0, 0, titleImage.size.width / 2, titleImage.size.height / 2);
-
     self.viewController.navigationItem.titleView = imageView;
 }
 
